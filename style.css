@@ -1,0 +1,147 @@
+body {
+  background-color: antiquewhite;
+}
+
+/* Common asstes */
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+.post-container {
+  border: 4px solid rgb(204, 199, 199);
+  border-radius: 35px;
+  height: 754px;
+  width: 390px;
+  background-color: #1b1b1b;
+}
+
+.inside-border {
+  position: relative;
+  height: 742px;
+  border: 6px solid black;
+  border-radius: 35px;
+}
+
+.post-header {
+  padding: 15px 0;
+  display: flex;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: solid 2px rgba(255, 20, 20, 0.555);
+}
+
+.ellipsis {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  margin-left: 315px;
+  margin-top: 15px;
+  color: aliceblue;
+}
+
+.ellipsis-img {
+  height: 33px;
+  max-width: 33px;
+  display: inline;
+}
+
+.main-img-container {
+  object-position: center;
+  background: black;
+  display: block;
+}
+
+.main-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 0;
+}
+
+.actions-sec1 {
+  display: flex;
+}
+
+.actions-sec1 i {
+  margin: 0 10px;
+}
+
+.actions-sec2 {
+  display: flex;
+}
+
+.actions-sec2 i {
+  margin: 0 10px;
+}
+
+.likes-container {
+  color: white;
+  margin: 10px;
+}
+
+.first-liked {
+  font-weight: 700;
+}
+
+.likes-btn {
+  color: white;
+  font-weight: 700;
+}
+
+.caption-container {
+  color: white;
+  margin: 5px 10px;
+  display: flex;
+}
+
+
+
+.caption-username {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.comments-btn {
+  color: #808080;
+  margin: 5px 10px;
+  padding: 0;
+}
+
+.date_comments-container {
+  margin: 0 10px;
+  color: #808080;
+}
+
+.hidden {
+  display: none;
+}

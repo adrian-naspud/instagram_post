@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="css_reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Card 1 -->
+  <section class="container-main container-main_post">
+    <div class="post-container">
+      <div class="inside-border">
+        <div class="post-header">
+          <img src="" alt="" class="profile-photo">
+          <div class="user-heading">
+          </div>
+          <button class="ellipsis">
+            <img src="/assets/ellipsis.png" class="ellipsis-img" srcset="">
+          </button>
+        </div>
+        <div class="main-img-container">
+          <img src="" alt="" class="main-img">
+        </div>
+        <div class="actions-container">
+          <div class="actions-sec1">
+            <i class="fa-regular fa-heart fa-lg"></i>
+            <i class="fa-regular fa-comment fa-lg"></i>
+            <i class="fa-regular fa-paper-plane fa-lg"></i>
+          </div>
+          <div class="actions-sec2">
+            <i class="fa-regular fa-bookmark fa-lg"></i>
+          </div>
+        </div>
+        <div class="likes-container">
+          <p class="likes">Liked by <span class="first-liked"> messi</span> <span class="and"></span>
+            <button class="likes-btn btn"><span class="like-others">others</span></button>
+          </p>
+        </div>
+
+        <div class="caption-container">
+          <p class="caption-username">arlen_iii</p>
+          <p class="caption-text">Looks so relaxing</p>
+        </div>
+
+        <div class="comments-container">
+          <button class="comments-btn btn show-comments">View all <span class="number-of-comments"></span>
+            comments</button>
+        </div>
+
+        <div class="date_comments-container">
+          <p class="date-posted">2 days ago</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--  Comments page -------------------------------------------------------------------->
+  <section class="container-main container-main_comments hidden">
+    <div class="post-container">
+      <div class="inside-border">
+        <div class="comments-header flex row space-between align-items-center">
+          <button class="hide_comments-btn btn"><img class="icon-btns"
+              src="https://i.ibb.co/Nxn1mhs/icons8-chevron-left-50.png"></button>
+          <p>Comments</p>
+
+          <img class="icon-btns" src="https://i.ibb.co/N3Qy3Bf/icons8-paper-plane-32.png">
+        </div>
+        <div class="comments-section">
+
+        </div>
+        <div class="comments-footer flex column justify-center align-items-center">
+          <div class="comment-emojies flex row justify-center ">
+            <button class="emoji">❤️</button>
+            <button class="emoji">🙌</button>
+            <button class="emoji">🔥</button>
+            <button class="emoji">👏</button>
+            <button class="emoji">😍</button>
+            <button class="emoji">😮</button>
+            <button class="emoji">😂</button>
+          </div>
+          <div class="add-comment-container flex justify-center space-between align-items-center">
+            <form id="comment-form">
+              <input type="text" id="add-comment" name="comment" placeholder="Add a comment...">
+              <button class="follow-btn" type="submit" id="post-comment-btn"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Likes page -------------------------------------------------------------------->
+  <section class="container-main container-main_likes hidden">
+    <div class="post-container">
+      <div class="inside-border">
+        <div class="likes-header flex row space-between align-items-center">
+          <button class="hide_likes-btn btn"><img class="icon-btns"
+              src="https://i.ibb.co/Nxn1mhs/icons8-chevron-left-50.png"></button>
+          <p>Likes</p>
+
+          <img class="icon-btns" src="https://i.ibb.co/N3Qy3Bf/icons8-paper-plane-32.png">
+        </div>
+        <div class="likes-section">
+          <div class="flex justify-center space-between align-items-center">
+            <form id="likes-form">
+              <input type="text" id="add-comment" name="comment" placeholder="Search likes...">
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
