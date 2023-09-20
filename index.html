@@ -17,7 +17,7 @@
     <div class="post-container">
       <div class="inside-border">
         <div class="post-header">
-          <img src="" alt="" class="profile-photo">
+          <img src="/assets/vwuser.jpg" alt="" class="profile-photo">
           <div class="user-heading">
           </div>
           <button class="ellipsis">
@@ -25,7 +25,7 @@
           </button>
         </div>
         <div class="main-img-container">
-          <img src="" alt="" class="main-img">
+          <img src="/assets/vwpost1.jpg" alt="" class="main-img">
         </div>
         <div class="actions-container">
           <div class="actions-sec1">
@@ -38,14 +38,14 @@
           </div>
         </div>
         <div class="likes-container">
-          <p class="likes">Liked by <span class="first-liked"> messi</span> <span class="and"></span>
-            <button class="likes-btn btn"><span class="like-others">others</span></button>
+          <p class="likes">Liked by <span class="first-liked"> messi</span>
+            <button class="likes-btn btn"><span class="and"></span><span class="like-others"> others</span></button>
           </p>
         </div>
 
         <div class="caption-container">
-          <p class="caption-username">arlen_iii</p>
-          <p class="caption-text">Looks so relaxing</p>
+          <p class="caption"><span class="caption-username">vwcanada</span><span class="caption-text">This goes out to
+              everyone who learned to drive on pixels before pavement 😉 <br>Happy #VideoGames Day!</span> </p>
         </div>
 
         <div class="comments-container">
@@ -67,15 +67,24 @@
   <section class="container-main container-main_comments hidden">
     <div class="post-container">
       <div class="inside-border">
-        <div class="comments-header flex row space-between align-items-center">
+        <div class="comments-header">
           <button class="hide_comments-btn btn"><img class="icon-btns"
               src="https://i.ibb.co/Nxn1mhs/icons8-chevron-left-50.png"></button>
           <p>Comments</p>
 
           <img class="icon-btns" src="https://i.ibb.co/N3Qy3Bf/icons8-paper-plane-32.png">
         </div>
-        <div class="comments-section">
+        <div class="comments-section" id="comments-section">
+          <!-- <div class="comment_single-container">
+            <img src="/assets/user1 vertappen.png" alt="" srcset="" class="profile-photo">
+            <div class="comment_single-text">
+              <p class="comment_single-user">m.verstppen</p>
+              <p class="comment_single-text">love my fans Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus perspiciatis, nihil dicta soluta est incidunt quas esse tempora debitis dolore ipsum au
+              </p>
+            </div>
 
+          </div> -->
         </div>
         <div class="comments-footer flex column justify-center align-items-center">
           <div class="comment-emojies flex row justify-center ">
@@ -87,10 +96,13 @@
             <button class="emoji">😮</button>
             <button class="emoji">😂</button>
           </div>
-          <div class="add-comment-container flex justify-center space-between align-items-center">
+          <div class="add-comment-container">
+            <div class="user-img" id="comment-user-img">
+              <img src="/assets/vwuser.jpg" class="profile-photo" srcset="">
+            </div>
             <form id="comment-form">
-              <input type="text" id="add-comment" name="comment" placeholder="Add a comment...">
-              <button class="follow-btn" type="submit" id="post-comment-btn"></button>
+              <input type="text" id="add-comment" class="add-comment" name="comment" placeholder="Add a comment...">
+              <button class="post-comment-btn" type="submit" id="post-comment-btn">Post</button>
             </form>
           </div>
         </div>
@@ -102,7 +114,7 @@
   <section class="container-main container-main_likes hidden">
     <div class="post-container">
       <div class="inside-border">
-        <div class="likes-header flex row space-between align-items-center">
+        <div class="likes-header">
           <button class="hide_likes-btn btn"><img class="icon-btns"
               src="https://i.ibb.co/Nxn1mhs/icons8-chevron-left-50.png"></button>
           <p>Likes</p>
@@ -110,23 +122,27 @@
           <img class="icon-btns" src="https://i.ibb.co/N3Qy3Bf/icons8-paper-plane-32.png">
         </div>
         <div class="likes-section">
-          <div class="flex justify-center space-between align-items-center">
+          <div class="likes-section_form">
             <form id="likes-form">
-              <input type="text" id="add-comment" name="comment" placeholder="Search likes...">
+              <input type="text" class="add-comment" id="add-comment" name="comment" placeholder="Search likes...">
 
             </form>
           </div>
 
+          <!-- <div class="likes_single-container">
+            <div class="likes_single-container-left">
+              <img src="/assets/user1 vertappen.png" alt="" srcset="" class="profile-photo">
+              <p class="comment_single-user">m.verstppen</p>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
 
-
-
-
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 
 </html>
